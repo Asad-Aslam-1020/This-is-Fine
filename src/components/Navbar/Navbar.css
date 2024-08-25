@@ -1,0 +1,292 @@
+/* Navbar Desktop */
+
+#navbar-desktop {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: black solid 5px;
+}
+
+#navbar-logo {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-img {
+  width: 70px;
+}
+
+#navbar-container {
+  border-left: black solid 5px;
+  border-right: black solid 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav-btn {
+  background: black;
+  color: white;
+  width: 110px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.nav-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#navbar-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar-link {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.navbar-link:hover {
+  cursor: pointer;
+}
+
+#menu-btn-container {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgb(251, 166, 4);
+}
+
+#menu-arrow {
+  font-size: 20px;
+}
+
+#menu-btn-text {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#navbar-mobile {
+  display: none;
+}
+
+/* Navbar For 1024px */
+
+@media (max-width: 1024px) {
+  #logo-img {
+    width: 60px;
+  }
+
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .nav-btn {
+    background: black;
+    color: white;
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  #navbar-links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+  }
+
+  .navbar-link {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  #menu-arrow {
+    font-size: 18px;
+  }
+
+  #menu-btn-text {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+/* Navbar Mobile */
+
+/* Navbar For 768px */
+
+@media (max-width: 768px) {
+  #navbar-desktop {
+    display: none;
+  }
+
+  #navbar-mobile {
+    width: 100%;
+    height: 12%;
+    border-bottom: 5px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #navbar-mobile-logo {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo-img {
+    width: 70px;
+  }
+
+  #hamgurger-icon-container {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hamburger-icon {
+    font-size: 30px;
+  }
+
+  #navbar-link-menu {
+    position: absolute;
+    width: 35%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    border: 1px black solid;
+    transform: translateX(100%);
+    display: none;
+  }
+
+  #mobile-navbar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 10px;
+  }
+
+  #mobile-navbar-links-container {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+
+  .mobile-navbar-link {
+    width: 100%;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .mobile-navbar-link:hover {
+    cursor: pointer;
+    background: #0000000c;
+  }
+
+  #navbar-menu-btn-container {
+    padding-left: 20px;
+  }
+
+  #navbar-menu-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  #navbar-menu-btn {
+    width: 100px;
+    height: 50px;
+    background: black;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+
+  #backArrow {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  #back-arrow {
+    font-size: 20px;
+  }
+}
+
+/* Navbar For 425px */
+
+@media (max-width: 425px) {
+  #logo-img {
+    width: 40px;
+  }
+
+  #hamburger-icon {
+    font-size: 20px;
+  }
+
+  #navbar-link-menu {
+    width: 50%;
+  }
+}
+
+/* Navbar For 320px */
+
+@media (max-width: 320px) {
+  #logo-img {
+    width: 30px;
+  }
+
+  #hamburger-icon {
+    font-size: 20px;
+  }
+
+  #navbar-link-menu {
+    width: 50%;
+  }
+}

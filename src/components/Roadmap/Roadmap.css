@@ -1,0 +1,172 @@
+#roadmap {
+  width: 100%;
+  height: 250vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#roadmap-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../../public/raodmapbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#dog-img-container {
+  width: 100%;
+  height: 35%;
+  background: rgb(251, 166, 4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dog-img {
+  width: 400px;
+}
+
+#cards-container {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#simple-cards {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.text-head {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.simple-card {
+  border: 5px black solid;
+  border-radius: 20px;
+  padding: 20px;
+  width: 25%;
+  height: 40%;
+  box-shadow: -10px 10px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#gif-container {
+  padding: 0;
+}
+
+#gif {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.text {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+#heading {
+  color: white;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Roadmap For 1024px */
+
+@media (max-width: 1024px) {
+  .simple-card {
+    width: 25%;
+  }
+
+  #simple-cards {
+    width: 100%;
+    gap: 30px;
+  }
+}
+
+/* Roadmap For 768px */
+
+@media (max-width: 768px) {
+  .simple-card {
+    width: 30%;
+  }
+
+  #simple-cards {
+    width: 100%;
+    gap: 20px;
+  }
+}
+
+/* Roadmap For 425px */
+
+@media (max-width: 425px) {
+  #roadmap {
+    margin-top: 300px;
+    height: 300vh;
+  }
+  .simple-card {
+    width: 80%;
+    height: 25%;
+  }
+
+  #simple-cards {
+    width: 100%;
+    gap: 20px;
+  }
+
+  #dog-img-container {
+    height: 20%;
+  }
+  #dog-img {
+    width: 200px;
+  }
+}
+
+/* Roadmap For 375px */
+
+@media (max-width: 375px) {
+  #roadmap {
+    margin-top: 350px;
+    height: 300vh;
+  }
+  .simple-card {
+    width: 80%;
+    height: 27%;
+  }
+
+  #simple-cards {
+    width: 100%;
+    gap: 20px;
+  }
+
+  #dog-img-container {
+    height: 10%;
+  }
+  #dog-img {
+    width: 100px;
+  }
+}

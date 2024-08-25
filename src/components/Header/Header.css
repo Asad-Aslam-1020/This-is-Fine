@@ -1,0 +1,12 @@
+/* Header For All Displays */
+
+#header {
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+#Iframe {
+  width: 99%;
+  height: 100%;
+}

@@ -1,0 +1,311 @@
+/* About For Desktop */
+
+#about {
+  border-top: black 5px solid;
+  border-bottom: black 5px solid;
+  background: rgb(251, 166, 4);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#dog-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rotating-dog-container {
+  border: 5px black solid;
+  height: 60%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  box-shadow: 10px 15px 8px;
+  background: white;
+  transform: rotate(0deg);
+  transition: 225ms;
+}
+
+#rotating-dog-container:hover {
+  transform: rotate(-20deg);
+  transition: transform 225ms ease-in-out;
+}
+
+#dog-img {
+  width: 350px;
+}
+
+#about-text {
+  width: 50%;
+  height: 100%;
+}
+
+#about-text-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 25px;
+}
+
+#first-line {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.lines {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 80%;
+}
+
+#code-text {
+  border: 5px black solid;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  box-shadow: -10px 10px 8px 0px;
+}
+
+#code-text:hover {
+  color: white;
+  border: white 5px solid;
+}
+
+#code {
+  transition: 225ms;
+}
+
+#code:hover {
+  color: white;
+  transition: 225ms ease-in-out;
+}
+
+#board-icon {
+  font-size: 30px;
+  transition: 225ms;
+  cursor: pointer;
+}
+
+#board-icon:hover {
+  color: white;
+  transition: 225ms ease-in;
+  transform: rotate(20deg);
+}
+
+#logos-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.logo-img {
+  width: 50px;
+  cursor: pointer;
+}
+
+/* About For 1024px */
+
+@media (max-width: 1024px) {
+  #first-line {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .lines {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 80%;
+  }
+
+  #dog-img {
+    width: 300px;
+  }
+
+  #rotating-dog-container {
+    border: 5px black solid;
+    height: 60%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 10px 15px 8px;
+    background: white;
+    transform: rotate(0deg);
+    transition: 225ms;
+  }
+}
+
+/* About For 768px */
+
+@media (max-width: 768px) {
+  #code-text {
+    border: 5px black solid;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    box-shadow: -10px 10px 8px 0px;
+  }
+
+  #first-line {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  #code {
+    transition: 225ms;
+    font-size: 0.7rem;
+  }
+
+  #dog-img {
+    width: 200px;
+  }
+
+  #rotating-dog-container {
+    border: 5px black solid;
+    height: 40%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 10px 15px 8px;
+    background: white;
+    transform: rotate(0deg);
+    transition: 225ms;
+  }
+
+  .logo-img {
+    width: 30px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 425px) {
+  #about {
+    height: 120vh;
+  }
+
+  #about-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #rotating-dog-container {
+    border: 5px black solid;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 10px 15px 8px;
+    background: white;
+    transform: rotate(0deg);
+    transition: 225ms;
+  }
+
+  #rotating-dog-container {
+    border: 5px black solid;
+    height: 45%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 10px 15px 8px;
+    background: white;
+    transform: rotate(0deg);
+    transition: 225ms;
+  }
+
+  #about-text {
+    width: 100%;
+    height: 50%;
+  }
+
+  #first-line {
+    font-size: 1.5rem;
+  }
+
+  #dog-img {
+    width: 150px;
+  }
+
+  .lines {
+    font-size: 0.9rem;
+  }
+
+  #about-text-container {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* About For 375px */
+
+@media (max-width: 375px) {
+  .lines {
+    font-size: 0.8rem;
+  }
+}
+
+/* About For 320px */
+
+@media (max-width: 320px) {
+  .lines {
+    font-size: 0.7rem;
+  }
+  #code {
+    font-size: .6rem;
+  }
+  #dog-img {
+    width: 120px;
+  }
+  #rotating-dog-container {
+    border: 5px black solid;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 10px 15px 8px;
+    background: white;
+    transform: rotate(0deg);
+    transition: 225ms;
+  }
+}
