@@ -9,7 +9,7 @@ export default function About() {
       <div id="about-container">
         <div id="dog-container">
           <div id="rotating-dog-container">
-            <img id="dog-img" src="/dog-img.webp" alt="" />
+              <img id="dog-img" src="/dog-img.webp" alt="" />
           </div>
         </div>
         <div id="about-text">

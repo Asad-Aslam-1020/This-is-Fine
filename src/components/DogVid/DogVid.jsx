@@ -10,7 +10,7 @@ export default function DogVid() {
       </div>
       <div id="tokenomices">
         <div>
-          <span id="heading">TOKENOMICS</span>
+          <span id="token-heading">TOKENOMICS</span>
         </div>
         <div id="boxes-container">
           <div className="boxes">

@@ -1,11 +1,12 @@
 #buy {
   width: 100%;
-  height: 200vh;
+  height: 220vh;
   background: rgb(251, 166, 4);
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  margin-top: 400px;
 }
 
 #empty {
@@ -23,20 +24,27 @@
   height: 10%;
 }
 
+.points {
+  font-size: 1.2rem;
+}
+
 #points-container {
   width: 60%;
   height: 20%;
+  background: white;
   display: flex;
   justify-content: space-around;
   align-items: start;
   flex-direction: column;
   border: 5px solid black;
-  padding: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
   border-radius: 20px;
   box-shadow: -10px 10px 10px;
 }
 
 #frame-container {
+  background: white;
   margin-top: 100px;
   border: 5px solid black;
   border-radius: 20px;
@@ -54,27 +62,36 @@
   border-radius: 20px;
 }
 
-/* BuySection For 10224px */
+/* BuySection For 1024px */
 
 @media (max-width: 1024px) {
+  #buy {
+    margin-top: 300px;
+  }
+
   #points-container {
-    width: 70%;
+    width: 80%;
     height: 20%;
     display: flex;
     justify-content: space-around;
     align-items: start;
     flex-direction: column;
     border: 5px solid black;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 20px;
     box-shadow: -10px 10px 10px;
+  }
+
+  .points {
+    font-size: 1.1rem;
   }
 
   #frame-container {
     margin-top: 100px;
     border: 5px solid black;
     border-radius: 20px;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,15 +105,20 @@
 @media (max-width: 768px) {
   #points-container {
     width: 90%;
-    height: 22%;
+    height: 20%;
     display: flex;
     justify-content: space-around;
     align-items: start;
     flex-direction: column;
     border: 5px solid black;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 20px;
     box-shadow: -10px 10px 10px;
+  }
+
+  .points {
+    font-size: 1rem;
   }
 
   #frame-container {
@@ -115,7 +137,61 @@
 /* BuySection For 425px */
 
 @media (max-width: 425px) {
+  #points-container {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    border: 5px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px;
+  }
   .points {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  #last-point {
+    font-size: 0.9rem;
+  }
+
+  #frame-container {
+    margin-top: 100px;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    box-shadow: -10px 10px 10px;
+  }
+}
+
+/* BuySection For 375px */
+
+@media (max-width: 375px) {
+  #points-container {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    border: 5px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px;
+  }
+  .points {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  #last-point {
     font-size: 0.7rem;
   }
 
@@ -127,7 +203,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: 40%;
+    box-shadow: -10px 10px 10px;
+  }
+}
+
+/* BuySection For 320px */
+
+@media (max-width: 320px) {
+  #points-container {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    border: 5px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 10px;
+  }
+  .points {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  #last-point {
+    font-size: 0.6rem;
+  }
+
+  #frame-container {
+    margin-top: 100px;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
     box-shadow: -10px 10px 10px;
   }
 }

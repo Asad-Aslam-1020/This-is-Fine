@@ -24,7 +24,7 @@ export default function BuySection() {
           about buying with a specific slippage, although you may need to use
           slippage during times of market volatility.
         </li>
-        <li className="points">
+        <li id="last-point" className="points">
           CA:- 0x75c97384ca209f915381755c582ec0e2ce88c1ba
         </li>
       </ul>
